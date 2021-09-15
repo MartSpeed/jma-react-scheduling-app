@@ -4,4 +4,6 @@ console.log('this is JS');
 //  require() takes a path to a file
 let location = require('./locations.js');
 
-console.log(location);
+for (let locations of location) {
+  console.log(`Your appointment will be scheduled in the ${locations} area.`);
+}
