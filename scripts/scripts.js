@@ -4,9 +4,10 @@ const sTime = new Date(2021, 8, 14);
 const eTime = new Date(2021, 8, 15);
 
 //  incantation setup
-//  require() takes a path to a file
+//  require() incantation
 let location = require('./locations.js');
 
+// location.csv database incantation
 for (let locations of location) {
   console.log(`Your appointment will be scheduled in the ${locations} area.`);
 }
